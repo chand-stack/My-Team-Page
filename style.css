@@ -6,8 +6,7 @@ body{
 font-family: 'Poppins', sans-serif;
 }
 header{
-    height: 400px;
-    border: 1px solid red;
+    height: 300px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,9 +14,98 @@ header{
 .title{
     width: 50%;
     text-align: center;
-    font-weight:900;
+    font-weight:bolder;
 }
 .description{
     width: 50%;
     font-weight: bolder;
+}
+img{
+    height: 300px;
+}
+.position{
+    transform: rotate(90deg);
+    height: 50px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.image-section{
+    height: 300px;
+width: 300px;
+display: flex;
+
+
+}
+.team{
+   margin-left: 100px;
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+}
+.img-2, .img-5{
+    padding-top: 80px;
+}
+footer{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #A9A9A9;
+
+}
+.u-name{
+    text-decoration: underline;
+font-weight: bolder;
+}
+
+@media screen and (max-width:576px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        width: 100%;
+    }
+    .title{
+        width: 100%;
+    }
+    .description{
+        width: 100%;
+    }
+    img{
+        height: 150px;
+        margin-left: 15px;
+    }
+    .team{
+        margin-left: 0px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+        .image-section{
+            height: 150px;
+            width: 150px;}
+            .image-section{
+                height: 100px;
+            width: 100px;
+            display: flex;}
+            .position{
+                transform: rotate(90deg);
+                height: 0px;
+                height: 20px;
+                margin-right: 10px;
+                margin-left: -3px;
+                text-transform: uppercase;
+            font-size: 10px;}
+            
+            .name{
+                padding-top: 40px;
+                padding-left: 20px;
+                font-size: 12px;
+            }
+            .img-2, .img-4, .img-6{
+                padding-top: 40px;
+                margin-left: 0px;
+            }
+            .img-5{
+                margin-top: -80px;
+            }
+                
 }
